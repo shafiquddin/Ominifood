@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+primary: #e67e22
+tint:#fae5d3;
+shades:
+accents:
+greys:#555,#444
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/****************/
+/* General Components */
+/****************/
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.primary-heading,
+.secondary-heading,
+.heading-teritiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #495057; */
+  letter-spacing: -0.5px;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.3rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-teritiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subHeading {
+  display: block;
+  font-size: 1.6rem;
+  color: #cf711f;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fae5d3;
+  /* border: 3px solid #fff; */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
