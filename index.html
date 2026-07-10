@@ -11,6 +11,14 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -58,6 +66,24 @@
           </div>
           <div class="hero-image-box">
             <img src="img/hero.png" class="hero-img" alt="hero" />
+          </div>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="logo techcrunch" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="logo business-insider"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="logo the-new-york-times"
+            />
+            <img src="img/logos/forbes.png" alt="logo forbes" />
+            <img src="img/logos/usa-today.png" alt="logo usa-today" />
           </div>
         </div>
       </section>
@@ -120,6 +146,79 @@
               alt="iphone app 3"
             />
           </div>
+        </div>
+      </section>
+      <section class="section-meals">
+        <div class="container">
+          <span class="subHeading">Meals</span>
+          <h2 class="secondary-heading">
+            Omnifood AI chooses from 5,000+ recipes
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tag">
+                <span class="tag tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal-title">Japanese Gyozas</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon
+                  ><span><strong>650</strong> Calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="restaurant-outline"
+                    class="meal-icon"
+                  ></ion-icon
+                  ><span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon
+                  ><span><strong>4.8</strong> rating (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tag">
+                <span class="tag tag--vegan">Vegan</span>
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+
+              <p class="meal-title">Avocado Salad</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon name="flame-outline" class="meal-icon"></ion-icon
+                  ><span><strong>400</strong> Calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="restaurant-outline"
+                    class="meal-icon"
+                  ></ion-icon
+                  ><span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon
+                  ><span><strong>4.8</strong> rating (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="list">list of diets</div>
         </div>
       </section>
     </main>
