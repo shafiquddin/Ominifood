@@ -16,6 +16,11 @@ html {
   font-size: 62.5%;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -101,6 +106,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -109,8 +115,11 @@ body {
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
-  transition: all 0.3s;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
 }
 
 .btn-full:link,
@@ -135,6 +144,18 @@ body {
   background-color: #fae5d3;
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #5c320e;
+  color: #fae5d3;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
