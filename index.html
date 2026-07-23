@@ -20,6 +20,10 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script defer src="js/script.js"></script>
     <title>Omnifood</title>
   </head>
@@ -30,11 +34,15 @@
       </a>
       <nav class="main-navigation">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonial</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try it for free</a></li>
+          <li>
+            <a class="main-nav-link" href="#how">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonial</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Try it for free</a>
+          </li>
         </ul>
       </nav>
       <button class="btn-nav-mobile">
@@ -54,10 +62,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-full margin-right-sm"
+            <a href="#cta" class="btn btn-full margin-right-sm"
               >Start Eating Well</a
             >
-            <a href="#" class="btn btn-outline">Learn More &darr;</a>
+            <a href="#how" class="btn btn-outline">Learn More &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="customer image" />
@@ -95,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subHeading">How It works</span>
           <h2 class="secondary-heading">
@@ -156,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subHeading">Meals</span>
           <h2 class="secondary-heading">
@@ -272,7 +280,7 @@
           <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <span class="subHeading">testimonials</span>
           <h2 class="secondary-heading">Once you try it, You can't go back</h2>
@@ -414,7 +422,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subHeading">Pricing</span>
           <h2 class="secondary-heading">
@@ -520,7 +528,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">

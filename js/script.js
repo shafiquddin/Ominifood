@@ -12,6 +12,31 @@ nav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
+/// smooth scrolling for safari older versions
+
+const allinks = document.querySelectorAll("a:link");
+
+allinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (link.classList.contains("main-nav-link")) {
+      header.classList.toggle("nav-open");
+    }
+  });
+});
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";

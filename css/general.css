@@ -15,6 +15,7 @@ greys:#555,#444
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *:focus {
