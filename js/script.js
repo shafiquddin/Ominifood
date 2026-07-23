@@ -31,8 +31,8 @@ allinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    if (link.classList.contains("main-nav-link")) {
-      header.classList.toggle("nav-open");
+    if (this.classList.contains("main-nav-link")) {
+      header.classList.remove("nav-open");
     }
   });
 });
