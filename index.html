@@ -546,12 +546,9 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form
-                class="cta-form"
-                name="signup"
-                method="POST"
-                data-netlify="true"
-              >
+              <form name="signup" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="signup" />
+
                 <div>
                   <label for="name">Full Name</label>
                   <input
@@ -559,8 +556,10 @@
                     name="full-name"
                     type="text"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
+
                 <div>
                   <label for="email">Email Address</label>
                   <input
@@ -568,19 +567,22 @@
                     name="email"
                     type="email"
                     placeholder="Your Email"
+                    required
                   />
                 </div>
+
                 <div>
-                  <label for="where-from">Where did you here from us?</label>
-                  <select id="where-from" name="where-from">
-                    <option value="" default>Choose here</option>
+                  <label for="where-from">Where did you hear about us?</label>
+                  <select id="where-from" name="where-from" required>
+                    <option value="">Choose one</option>
                     <option value="friends">Friends and family</option>
-                    <option value="youtube">Youtube and videos</option>
-                    <option value="facebook">facebook-ad</option>
-                    <option value="others">others</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="facebook">Facebook Ad</option>
+                    <option value="others">Others</option>
                   </select>
                 </div>
-                <button class="btn btn--form">Signup now</button>
+
+                <button type="submit" class="btn btn--form">Sign Up Now</button>
               </form>
             </div>
             <div
